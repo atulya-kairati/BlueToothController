@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DF464646"
+    tools:context=".ControllerActivity">
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical"
+           >
+
+
+           <Button
+               android:id="@+id/onOffButton"
+               android:layout_margin="16dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Off"
+               android:textSize="32sp"
+               android:background="#FFE600"
+               android:padding="32dp"
+               />
+
+
+
+
+           <EditText
+               android:id="@+id/customMsg"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_margin="16dp"
+               android:minLines="2"
+               android:gravity="center"
+               android:inputType="number"
+               android:backgroundTint="#FFFFFF"
+               />
+
+
+           <Button
+               android:id="@+id/sendMsgButton"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Send Custom Messsage"
+               android:layout_margin="16dp"
+               />
+
+           <Button
+               android:id="@+id/buttonDisconnect"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_margin="16dp"
+               android:background="@android:color/holo_red_light"
+               android:text="Disconnect"
+               />
+
+
+
+           <Button
+               android:id="@+id/scheduleTask"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_margin="16dp"
+               android:text="Schedule Task"
+               />
+
+       </LinearLayout>
+
+   </ScrollView>
+
+</RelativeLayout>
